@@ -26,7 +26,7 @@ navbar-links:
   Crime: "pages/Crime"
   Education: "pages/Education"
   Housing: "pages/Housing"
-  Overall: "pages/Overall
+  Overall: "pages/Overall"
 
 # Image to show in the navigation bar - image must be a square (width = height)
 # Remove this parameter if you don't want an image in the navbar
