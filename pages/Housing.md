@@ -17,4 +17,4 @@ To be honest, I'm having some trouble remembering right now, so why don't you ju
 
 Test2
 
-{% include NYC_PPSQ.html %}
+<iframe src="https://github.com/ThibauldBraet/Whos-your-data/blob/master/maps/NYC_PPSQ.html" width="100%" height="400px"></iframe>
