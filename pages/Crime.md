@@ -4,13 +4,17 @@ title: Crime
 subtitle: Crime in NYC
 ---
 
-My name is Inigo Montoya. I have the following qualities:
+New York City is the largest city in the United States by over 4 million people; as such, it is natural that with
+large population comes a large amount of crime. [Detailed crime data](https://data.cityofnewyork.us/Public-Safety/NYPD-Complaint-Data-Historic/qgea-i56i) for New York for years from 2006 to now, so we are able to gain some insight into the data.
 
-- I rock a great mustache
-- I'm extremely loyal to my family
+### New York City's Crime in Numbers
 
-What else do you need?
+![Crime per Year](../img/crime/crime_by_years.png)
 
-### my history
+![Crime per Year](../img/crime/crimes_per_month.png)
 
-To be honest, I'm having some trouble remembering right now, so why don't you just watch [my movie](http://en.wikipedia.org/wiki/The_Princess_Bride_%28film%29) and it will answer **all** your questions.
+![Crime per Year](../img/crime/crimes_per_hour.png)
+
+![Crime per Year](../img/crime/crimes_per_hour_cats.png)
+
+![Crime per Year](../img/crime/crime_per_hour_weekday.png)
