@@ -10,6 +10,8 @@ When looking for housing, people want to buy as cheap as possible, a large area 
 ### Price per Gross Square Feet
 <iframe src="https://thibauldbraet.github.io/maps/NYC_PPSQ.html" width="100%" height="400px"></iframe>
 
+{% include graph/housing/distribution_ppsf.html %}
+
 ### Price per Unit
 
 ## Square Feet per Unit
