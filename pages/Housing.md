@@ -4,20 +4,13 @@ title: Housing
 subtitle: Housing in NYC
 ---
 
-My name is Inigo Montoya. I have the following qualities:
+When looking for housing, people want to buy as cheap as possible, a large area to live on and if it is possible with a view on Central Park. Achieving all of these is of course not possible
 
-- I rock a great mustache
-- I'm extremely loyal to my family
 
-What else do you need?
-
-### my history
-
-To be honest, I'm having some trouble remembering right now, so why don't you just watch [my movie](http://en.wikipedia.org/wiki/The_Princess_Bride_%28film%29) and it will answer **all** your questions.
-
-Test5
-
+### Price per Gross Square Feet
 <iframe src="https://thibauldbraet.github.io/maps/NYC_PPSQ.html" width="100%" height="400px"></iframe>
 
-<iframe src="https://thibauldbraet.github.io/img/interactive_legend.html" width="100%" height="400px"></iframe>
-      
+### Price per Unit
+
+## Square Feet per Unit
+
