@@ -4,13 +4,16 @@ title: Education
 subtitle: Education in NYC
 ---
 
-My name is Inigo Montoya. I have the following qualities:
+When looking at the quality of a school, an undeniably universal standard is 
+the graduation and dropout rates of a school. With this in mind, we examine
+these rates among the schools of NYC. In doing so, we make it possible to find
+particular problem areas as well as areas in which it would be particularly easy
+to raise a child with a good education.
 
-- I rock a great mustache
-- I'm extremely loyal to my family
+### Education Trends
 
-What else do you need?
+![Graduation % per Year](../img/education/grad_%_borough.png)
 
-### my history
+![Dropout  % per Year](../img/education/grad_%_borough.png)
 
-To be honest, I'm having some trouble remembering right now, so why don't you just watch [my movie](http://en.wikipedia.org/wiki/The_Princess_Bride_%28film%29) and it will answer **all** your questions.
+
