@@ -15,7 +15,7 @@ New York is often considered to be the epicentre of the world and THE city that 
 Finding a place in New York is, however, a difficult task. Often, one wants to live in a comfortable house with a nice neighbourhood. Furthermore, for families moving to NYC, it's also important to find a place where they can live long term and safely raise a family.
 
 To evaluate the living conditions in NYC, we looked at three categories:
-* [Crime rate](pages/Crime): Safety is priotiy #1. 
+* [Crime rate](pages/Crime): Safety is priority #1. 
   * Nobody wants to get stabbed on his way to the grocery store.
 * [Education](/pages/Education) : Success is rooted in education. 
   * It's important to any family that their children get a good education.
