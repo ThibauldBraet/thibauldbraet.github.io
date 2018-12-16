@@ -46,8 +46,6 @@ roughly the same across hours; however, there are relatively less violations lat
 correlation between the hour of the day and the severity of the crime; a crime committed late at night is more likely
 to be violent or more severe in nature compared to one during the day.
 
-# ![Crime per Hour](../img/crime/crimes_per_hour.png)
-
 ![Crime per Weekday/Hour Combination](../img/crime/crime_per_hour_weekday.png)
 
 Peak crime for the city occurs on weekdays in the afternoons. On weekdays, crime is much lower in the mornings compared to 
@@ -58,6 +56,46 @@ continues until 4 AM on Saturday and Sunday morning, coinciding with when the ni
 
 ### Geographic Data and Maps
 
+New York City is comprised of five administrative regions called boroughs. As the NYC data also contains information about
+the locations of the crimes, it lends itself to analysis of geographic patterns that manifest themselves. 
+
+![Borough Crime Counts](../img/crime/borough_counts.png)
+
+For 2017, Brooklyn has the most crimes by a margin of over 20,000, which is roughly the difference between the middle three
+boroughs. Staten Island has the least by far. Naturally, it's important to take population and size of the boroughs into 
+account when taking pure crime numbers into account. For context, the population for New York City's zip codes are displayed
+below:
+
 <iframe src="https://thibauldbraet.github.io/maps/crime/pop_map.html" width="100%" height="400px"></iframe>
+
+For 2017 the US Census Population estimates were as follows:
+
+| Borough       | Population |
+|---------------|------------|
+| Brooklyn      | 2,648,771  |
+| Queens        | 2,358,582  |
+| Manhattan     | 1,664,727  |
+| Bronx         | 1,471,160  |
+| Staten Island | 479,458    |
+
+Brookyln and Queens are by far the largest boroughs, which can also be seen on the map. The border between Brooklyn and Queens
+is surrounded by a lot of the highest-population zip codes. Manhattan has a lot of very small neighborhoods, but they're very
+densely packed. Staten Island is on the other end of the spectrum; it has around 1 million fewer inhabitants than the next smallest
+borough, and its the least dense by far as well. The pure crime counts also allow us to gain a sense of the general crime
+landscape of the city.
+
 <iframe src="https://thibauldbraet.github.io/maps/crime/crime_counts.html" width="100%" height="400px"></iframe>
+
+The crime count map is very similar to the population map, as would be expected. Noticeably, the Bronx seems to have higher crime
+numbers relative to Brookyln when compared to its population. Examining the ratio between crime counts and population allows for
+greater insight into the true relative prevalence of crime. 
+
+To determine the relative crime rate, a metric was used with slight modifications. There are some zipcodes with very low populations,
+which would skew the ratio. As such, a cap is placed on how high the ratio can be. The values are also rescaled to be between 0 and 1,
+for use with our overall metric:
+
 <iframe src="https://thibauldbraet.github.io/maps/crime/crime_rates.html" width="100%" height="400px"></iframe>
+
+As can be seen, the Bronx does indeed have a very high amount of crime compared to Brooklyn and Queens after taking population into
+account. Manhattan also has high crime rates. As the heart of tourism of the city, this makes sense; increased tourist flow in the
+region would result in higher crime counts relative to the amount of people that actually reside in the region. 
