@@ -16,7 +16,7 @@ When we look at how this metric evolved through time, we see that it is growing 
 {% include graph/housing/ppsf_evolution.html %}   
 
 In the map below, this metric was evaluated per zip code. We see that it evolves quite naturally throughout the map and that each borough scores quite uniform. Only Queens seems to be divided in two where it is more expensive to live in northern pars compared to the southern part.
-<iframe src="https://thibauldbraet.github.io/_includes/maps/NYC_PPSQ.html" width="100%" height="400px"></iframe>
+<iframe src="https://thibauldbraet.github.io/maps/NYC_PPSQ.html" width="100%" height="400px"></iframe>
 
 ### Price per Unit
 Price per square feet doesn't say everything about how afforable it is to live somewhere. One can imagine that the bigger the house you buy the more favorable the price/area ratio will be. Maybe you just have a limited total budget. Then you don't care if you have to pay for e.g. 400\\$ per square feet if you have to buy a 10 million dollar mansion for that.   
@@ -28,14 +28,18 @@ The evolution of the prices per unit show again a similar behaviour. The housing
 {% include graph/housing/ppu_evolution.html %}   
 
 When we look at the distribution per zip code. We see again a pretty similar behaviour to the one as when evaluating the price per area. In this map however, it seems even more uniform throughout the borought but again with Queens being divided in a northern and souther part. When we look at Manhatten, we see that the zip codes neighbouring the Bronx borough is acutally quite cheap to live, these units will probably be the units mentioned earlier in the distribution graphs. After all it might thus be more difficult than expected to find an affordable living unit in Manhattan since you will then basically almost be living in the Bronx.
-<iframe src="https://thibauldbraet.github.io/_includes/maps/NYC_PPU.html" width="100%" height="400px"></iframe>
+<iframe src="https://thibauldbraet.github.io/maps/NYC_PPU.html" width="100%" height="400px"></iframe>
 
 
 ## Square Feet per Unit
-Finally let's see what the size of the units is in which people live.
+Finally let's see what the size of the units is in which people live.   
+
+Most of the people seem to live in a house/appartment of around 1000 square feet (~ 92m²). What's remarkable here is that Manhatten is the borouhg with the most left center of distribution. Apparantely the people in Manhattan are thus living in the smallest houses. However, the distribution is also the broadest for Manhattan with some very large houses as well. Taking into account the previous graphs, we might conclude that the gap between poor and rich is also the biggest in Manhattan. It seems that you have people who can afford to pay a lot of money to live in a large house while others are able to find a cheaper place at the cost of a smaller living area. The other boroughs seem to be similar to each other.
 {% include graph/housing/distribution_fpu.html %} 
 
+The living surface is not really evolving throuhg time. If any trend could be recognized at all, it could be a slightly downwards trend but this is very minimal. This graph shows however that Manhattan on average indeed has the smallest houses but remarkably is how big the houses in Staten Island are. On the previous analysis they also score pretty good which thus means that you can find a pretty large place for a reasonable price.  
 {% include graph/housing/sfpu_evolution.html %}
 
-<iframe src="https://thibauldbraet.github.io/_includes/maps/NYC_FPU.html" width="100%" height="400px"></iframe>
+Staten Island has indeed the largest houses, without any zip codes underperforming. Remarkably is however that Queens now seems to be subdivided into a western and eastern part. When looking at the map overall, there can be concluded that the further away from Manhattan, which is considered the center of New York, the larger the houses in general are
+<iframe src="https://thibauldbraet.github.io/maps/NYC_FPU.html" width="100%" height="400px"></iframe>
 
