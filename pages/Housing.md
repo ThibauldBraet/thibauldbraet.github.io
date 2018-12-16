@@ -15,7 +15,7 @@ When we look at how this metric evolved over time, we see that it is growing exp
 {% include graph/housing/ppsf_evolution.html %}   
 
 In the map below, this metric was evaluated per zip code. We see that it evolves quite naturally throughout the map and that each borough scores quite uniform. Only Queens seems to be divided into two where it is more expensive to live in northern part compared to the southern part.
-<iframe src="https://thibauldbraet.github.io/maps/NYC_PPSQ.html" width="100%" height="400px"></iframe>
+<iframe src="https://thibauldbraet.github.io/maps/housing/NYC_PPSF.html" width="100%" height="400px"></iframe>
 
 ### Price per Unit
 The price per square feet does not say everything about how afforable it is to live somewhere. One can imagine that the bigger the house you buy the more favorable the price/area ratio will be. Maybe you just have a limited total budget. Then you don't care if you have to pay e.g. 400\$ per square feet if you have to buy a 10 million dollar mansion for that.   
@@ -27,7 +27,7 @@ The evolution of the prices per unit show again a similar behaviour. The housing
 {% include graph/housing/ppu_evolution.html %}   
 
 When we look at the distribution per zip code, we see again a pretty similar behaviour to the one as when evaluating the price per area. In this map however, it seems even more uniform throughout the borought but again with Queens being divided in a northern and souther part. When we look at Manhatten, we see that the zip codes neighbouring the Bronx borough is acutally quite cheap to live, these units will probably be the units mentioned earlier in the distribution graphs. After all it might thus be more difficult than expected to find an affordable living unit in Manhattan since you will then basically almost be living in the Bronx.
-<iframe src="https://thibauldbraet.github.io/maps/NYC_PPU.html" width="100%" height="400px"></iframe>
+<iframe src="https://thibauldbraet.github.io/maps/housing/NYC_PPU.html" width="100%" height="400px"></iframe>
 
 
 ## Square Feet per Unit
@@ -40,5 +40,5 @@ The living surface is not really evolving over time. If any trend could be recog
 {% include graph/housing/sfpu_evolution.html %}
 
 Staten Island has indeed the largest houses, without any zip codes underperforming. Remarkably is however that Queens now seems to be subdivided into a western and eastern part. When looking at the map overall, there can be concluded that the further away from Manhattan, which is considered the center of New York, the larger the houses in general are
-<iframe src="https://thibauldbraet.github.io/maps/NYC_FPU.html" width="100%" height="400px"></iframe>
+<iframe src="https://thibauldbraet.github.io/maps/housing/NYC_FPU.html" width="100%" height="400px"></iframe>
 

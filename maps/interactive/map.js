@@ -7,12 +7,17 @@ function whenDocumentLoaded(action) {
 	}
 }
 
+let data_folder = "../../maps/interactive/"
+
 function topTen(crime, housing, education, obj) {
+	let min = minScore(crime, housing, education, obj);
+	let max = maxScore(crime, housing, education, obj);
 	let scores = [];
 	for (let zip in obj) {
 		scores.push({
 			"zip": zip,
-			"score": obj[zip]["crime"] * crime + obj[zip]["housing"] * housing + obj[zip]["education"] * education,
+			"score": max == min ? 1 : (obj[zip]["crime"] * crime + obj[zip]["housing"] * housing + obj[zip]["education"] * education - min)
+					/ (max - min),
 			"borough": obj[zip]["borough"]
 		});
 	}
@@ -21,6 +26,14 @@ function topTen(crime, housing, education, obj) {
 	return scores;
 }
 
+// finds the max score from the current linear combination
+function minScore(crime, housing, education, obj) {
+	let min = 10;
+	for (let zip in obj) {
+		min = Math.min(min, obj[zip]["crime"] * crime + obj[zip]["housing"] * housing + obj[zip]["education"] * education);
+	}
+	return min;
+}
 
 // finds the max score from the current linear combination
 function maxScore(crime, housing, education, obj) {
@@ -33,6 +46,8 @@ function maxScore(crime, housing, education, obj) {
 
 // returns the color for the given score
 function getColor(crime, housing, education, code, obj) {
+	let min = minScore(crime, housing, education, obj);
+	let max = maxScore(crime, housing, education, obj);
 	let score;
 	if (code in obj) {
 		let scores = obj[code];
@@ -40,12 +55,16 @@ function getColor(crime, housing, education, code, obj) {
 			return "grey";
 		}
 		score = scores["education"] * education + scores["housing"] * housing + scores["crime"] * crime;
+		if (max == min) {
+			score = 1;
+		} else {
+			score = (score - min) / (max - min);
+		}
 	} else {
 		return "grey";
 	}
 
-	let max = maxScore(crime, housing, education, obj);
-	let scale = chroma.scale(['white', 'green']).domain([0, max]);
+	let scale = chroma.scale(['white', 'green']).domain([0, 1]);
 	return scale(score);
 }
 
@@ -76,7 +95,7 @@ whenDocumentLoaded(() => {
 	background.addTo(mymap);
 
 	// loads json file
-	d3.json("nyc-postcode.json").then(function(json) {
+	d3.json(data_folder + "nyc-postcode.json").then(function(json) {
 		// reformats dictionary in better format
 		dict = {};
 		for (let i = 0; i < json.features.length; i++) {
@@ -84,7 +103,7 @@ whenDocumentLoaded(() => {
 		}
 
 		// reads csv with data
-		d3.csv("test.csv").then(function(data) {
+		d3.csv(data_folder + "test.csv").then(function(data) {
 			obj = {};
 			for (let i = 0; i < data.length; i++) {
 				let code = data[i]["zipcode"];
@@ -112,7 +131,7 @@ whenDocumentLoaded(() => {
 			        weight: 1,
 			        opacity: 1,
 			        color: 'black',
-			        fillOpacity: 0.7
+			        fillOpacity: 1
 				};
 			}
 
