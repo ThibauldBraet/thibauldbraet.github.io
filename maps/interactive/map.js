@@ -10,7 +10,6 @@ function whenDocumentLoaded(action) {
 function topTen(crime, housing, education, obj) {
 	let scores = [];
 	for (let zip in obj) {
-		console.log(zip);
 		scores.push({
 			"zip": zip,
 			"score": obj[zip]["crime"] * crime + obj[zip]["housing"] * housing + obj[zip]["education"] * education,
@@ -37,6 +36,9 @@ function getColor(crime, housing, education, code, obj) {
 	let score;
 	if (code in obj) {
 		let scores = obj[code];
+		if (scores["education"] == -1 || scores["housing"] == -1 || scores["crime"] == -1) { // invalid data
+			return "grey";
+		}
 		score = scores["education"] * education + scores["housing"] * housing + scores["crime"] * crime;
 	} else {
 		return "grey";
@@ -86,11 +88,15 @@ whenDocumentLoaded(() => {
 			obj = {};
 			for (let i = 0; i < data.length; i++) {
 				let code = data[i]["zipcode"];
-				obj[code] = data[i];
-				obj[code]["crime"] = 1 - +obj[code]["crime"];
-				obj[code]["education"] = +obj[code]["education"];
-				obj[code]["housing"] = +obj[code]["housing"];
-				obj[code]["borough"] = dict[code].properties.borough;
+
+				// checks if data is invalid
+				if (+data[i]["crime"] != -1 && +data[i]["education"] != -1 && +data[i]["housing"] != -1) {
+					obj[code] = data[i];
+					obj[code]["crime"] = 1 - +obj[code]["crime"];
+					obj[code]["education"] = +obj[code]["education"];
+					obj[code]["housing"] = +obj[code]["housing"];
+					obj[code]["borough"] = dict[code].properties.borough;
+				}
 			}
 
 			let crime = document.getElementById("crime");
