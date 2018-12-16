@@ -7,6 +7,59 @@ function whenDocumentLoaded(action) {
 	}
 }
 
+function topTen(crime, housing, education, obj) {
+	let scores = [];
+	for (let zip in obj) {
+		console.log(zip);
+		scores.push({
+			"zip": zip,
+			"score": obj[zip]["crime"] * crime + obj[zip]["housing"] * housing + obj[zip]["education"] * education,
+			"borough": obj[zip]["borough"]
+		});
+	}
+	scores.sort((a, b) => b.score - a.score);
+	scores = scores.slice(0, Math.min(10, scores.length));
+	return scores;
+}
+
+
+// finds the max score from the current linear combination
+function maxScore(crime, housing, education, obj) {
+	let max = 0;
+	for (let zip in obj) {
+		max = Math.max(max, obj[zip]["crime"] * crime + obj[zip]["housing"] * housing + obj[zip]["education"] * education);
+	}
+	return max;
+}
+
+// returns the color for the given score
+function getColor(crime, housing, education, code, obj) {
+	let score;
+	if (code in obj) {
+		let scores = obj[code];
+		score = scores["education"] * education + scores["housing"] * housing + scores["crime"] * crime;
+	} else {
+		return "grey";
+	}
+
+	let max = maxScore(crime, housing, education, obj);
+	let scale = chroma.scale(['white', 'green']).domain([0, max]);
+	return scale(score);
+}
+
+// initializes table to values
+function setTable(top) {
+	for (let i = 1; i <= 10; i++) {
+		let scoreId = "score_" + i;
+		let zipId = "zip_" + i;
+		let boroId = "boro_" + i
+		document.getElementById(zipId).innerHTML = top[i - 1].zip;
+		document.getElementById(scoreId).innerHTML = Math.round(top[i - 1].score * 1000) / 1000;
+		document.getElementById(boroId).innerHTML = top[i - 1].borough;
+	}
+}
+
+
 whenDocumentLoaded(() => {
 	// creates map
 	var mymap = L.map('map').setView([40.7128, -73.9], 10);
@@ -37,6 +90,7 @@ whenDocumentLoaded(() => {
 				obj[code]["crime"] = 1 - +obj[code]["crime"];
 				obj[code]["education"] = +obj[code]["education"];
 				obj[code]["housing"] = +obj[code]["housing"];
+				obj[code]["borough"] = dict[code].properties.borough;
 			}
 
 			let crime = document.getElementById("crime");
@@ -44,40 +98,11 @@ whenDocumentLoaded(() => {
 			let education = document.getElementById("education");
 
 
-			// finds the max score from the current linear combination
-			function maxScore(crime, housing, education) {
-				let max = 0;
-				for (zip in obj) {
-					max = Math.max(max, obj[zip]["crime"] * crime + obj[zip]["housing"] * housing + obj[zip]["education"] * education);
-				}
-				return max;
-			}
-
-			// returns the color for the given score
-			function getColor(score) {
-				if (score == -1) {
-					return "grey";
-				} else {
-					var max = maxScore(parseFloat(crime.value), parseFloat(housing.value), parseFloat(education.value));
-					var scale = chroma.scale(['white', 'green']).domain([0, max]);
-					return scale(score);
-				}
-			}
-
-			// returns the score for the given postal code
-			function getScore(code) {
-				if (code in obj) {
-					let scores = obj[code];
-					return scores["education"] * education.value + scores["housing"] * housing.value + scores["crime"] * crime.value;
-				} else {
-					return -1;
-				}
-			}
-
 			// style function for the map
 			function style(feature) {
 			    return {
-			        fillColor: getColor(getScore(feature.properties.postalCode)),
+			        fillColor: getColor(parseFloat(crime.value), parseFloat(housing.value), parseFloat(education.value), 
+			        		feature.properties.postalCode, obj),
 			        weight: 1,
 			        opacity: 1,
 			        color: 'black',
@@ -94,6 +119,8 @@ whenDocumentLoaded(() => {
 						}
 					});
 					L.geoJson(json, {style: style}).addTo(mymap);
+					let top =topTen(parseFloat(crime.value), parseFloat(housing.value), parseFloat(education.value), obj);
+					setTable(top);
 				})
 			}
 
@@ -103,6 +130,8 @@ whenDocumentLoaded(() => {
 
 			// adds choropleth
 			L.geoJson(json, {style: style}).addTo(mymap);
+			let top = topTen(parseFloat(crime.value), parseFloat(housing.value), parseFloat(education.value), obj);
+			setTable(top);
 		});
 	});
 });
