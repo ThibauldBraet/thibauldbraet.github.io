@@ -22,7 +22,7 @@ To evaluate the living conditions in NYC, we looked at three categories:
 * [Housing](/pages/Housing): New York ain't cheap. 
   * When it comes down to money, you still need to be able to find an affordable place to live.
 
-In addition to looking at these metrics independently, we also examine how these metrics are [correlated](/pages/Overall). Do high crime rates correspond to a lower graduation rate? Are neighbourhoods more prone to crime also cheaper to live in?
+In addition to looking at these metrics independently, we also examine them in [combination](/pages/Overall). How does each part of New York stack up when we examine these three key metrics? 
 
 Fortunately, NYC has collected massive amounts of data on every one of these aspects. As we move further into the information age and more cities begin collecting data in the same way, it would be useful to scale-up projects like this one and adapt them to new locations.
 
