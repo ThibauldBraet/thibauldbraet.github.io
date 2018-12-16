@@ -16,11 +16,11 @@ Finding a place in New York is, however, a difficult task. Often, one wants to l
 
 To evaluate the living conditions in NYC, we looked at three categories:
 * [Crime rate](pages/Crime): Safety is priotiy #1. 
-** Nobody wants to get stabbed on his way to the grocerie store.
+  * Nobody wants to get stabbed on his way to the grocerie store.
 * [Education](/pages/Education) : Success is rooted in education. 
-** It's important to any family that their children get a good education.
+  * It's important to any family that their children get a good education.
 * [Housing](/pages/Housing): New York ain't cheap. 
-** When it comes down to money, you still need to be able to find an affordable place to live.
+  * When it comes down to money, you still need to be able to find an affordable place to live.
 
 In addition to looking at these metrics independently, we also examine how these metrics are [correlated](/pages/Overall). Do high crime rates correspond to a lower graduation rate? Are neighbourhoods more prone to crime also cheaper to live in?
 
