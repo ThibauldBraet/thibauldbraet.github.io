@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<html>
+<head>
+	<title>Interactive Map</title>
+
+	<!-- Leaflet -->
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
+	integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
+	crossorigin=""/>
+
+	<script src="https://unpkg.com/leaflet@1.3.4/dist/leaflet.js"
+	integrity="sha512-nMMmRyTVoLYqjP9hrbed9S+FzjZHW5gY1TWCHA5ckwXZBadntCNs8kEqAWdrb9O7rxbCaA4lKTIWjDXZxflOcA=="
+	crossorigin=""></script>
+	<script src="https://d3js.org/d3.v5.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/chroma-js/2.0.2/chroma.min.js"></script>
+	<script src="https://unpkg.com/d3-simple-slider"></script>
+	<script src="map.js"></script>
+
+	<link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+	<div id="map"></div>
+	<ul>
+		<li>
+			<label for="crime">Crime:</label>
+			<input type="range" name="crime" id="crime" min="0" max="1" step="0.01" value="1">
+		</li>
+		<li>
+			<label for="education">Education:</label>
+			<input type="range" name="education" id="education" min="0" max="1" step="0.01" value="1">
+		</li>
+		<li>
+			<label for="housing">Housing:</label>
+			<input type="range" name="housing" id="housing" min="0" max="1" step="0.01" value="1">
+		</li>
+	</ul>
+</body>
+</html>
