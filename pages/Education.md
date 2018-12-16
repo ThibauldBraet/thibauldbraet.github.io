@@ -46,11 +46,11 @@ dropout rates for each postcode in the year 2013:
 
 Graduation % by Postcode:
 
-<iframe src="https://thibauldbraet.github.io/maps/education/grad_postcodes.html" width="100%" height="400px"></iframe>
+<iframe src="https://thibauldbraet.github.io/maps/education/NYC_grad2013.html" width="100%" height="400px"></iframe>
 
 Dropout % by Postcode:
 
-<iframe src="https://thibauldbraet.github.io/maps/education/drop_postcodes.html" width="100%" height="400px"></iframe>
+<iframe src="https://thibauldbraet.github.io/maps/education/NYC_dropout2013.html" width="100%" height="400px"></iframe>
 
 Immediately, we notice that education varies drastically even within boroughs.
 In many cases, neighboring postcodes have sizably different results. This
