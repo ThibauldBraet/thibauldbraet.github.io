@@ -1,7 +1,7 @@
 ---
 layout: page
-title: About me
-subtitle: Why you'd want to go on a date with me
+title: NYC From Above
+subtitle: An Overall Look at New York
 ---
 
 Test interactive correct height 800px
