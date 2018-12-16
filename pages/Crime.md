@@ -55,4 +55,7 @@ afternoons. However, it can be seen that these patterns shift over the weekends.
 quite reaches the high peaks of weekdays, the daily peaks are reached later in the night. The heightened frequency of crime
 continues until 4 AM on Saturday and Sunday morning, coinciding with when the nightlife would generally be reaching its peak.
 
-# TODO: ADD MAPS
+
+### Geographic Data and Maps
+
+<iframe src="../img/crime/crimes_per_hour.png" width="100%" height="400px"></iframe>
