@@ -16,5 +16,4 @@ to raise a child with a good education.
 
 ![Dropout  % per Year](../img/education/grad_%_borough.png)
 
-<iframe src="http://thibauldbraet.github.io/maps/education/grad_%_boroughs.html"
-width="100%" height="400px"></iframe>
+<iframe src="https://thibauldbraet.github.io/maps/education/grad_%_boroughs.html" width="100%" height="400px"></iframe>
