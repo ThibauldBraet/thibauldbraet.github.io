@@ -32,10 +32,14 @@ When we look at the distribution per zip code. We see again a pretty similar beh
 
 
 ## Square Feet per Unit
-Finally let's see what the size of the units is in which people live.
+Finally let's see what the size of the units is in which people live.   
+
+Most of the people seem to live in a house/appartment of around 1000 square feet (~ 92m²). What's remarkable here is that Manhatten is the borouhg with the most left center of distribution. Apparantely the people in Manhattan are thus living in the smallest houses. However, the distribution is also the broadest for Manhattan with some very large houses as well. Taking into account the previous graphs, we might conclude that the gap between poor and rich is also the biggest in Manhattan. It seems that you have people who can afford to pay a lot of money to live in a large house while others are able to find a cheaper place at the cost of a smaller living area. The other boroughs seem to be similar to each other.
 {% include graph/housing/distribution_fpu.html %} 
 
+The living surface is not really evolving throuhg time. If any trend could be recognized at all, it could be a slightly downwards trend but this is very minimal. This graph shows however that Manhattan on average indeed has the smallest houses but remarkably is how big the houses in Staten Island are. On the previous analysis they also score pretty good which thus means that you can find a pretty large place for a reasonable price.  
 {% include graph/housing/sfpu_evolution.html %}
 
+Staten Island has indeed the largest houses, without any zip codes underperforming. Remarkably is however that Queens now seems to be subdivided into a western and eastern part. When looking at the map overall, there can be concluded that the further away from Manhattan, which is considered the center of New York, the larger the houses in general are
 <iframe src="https://thibauldbraet.github.io/maps/NYC_FPU.html" width="100%" height="400px"></iframe>
 
