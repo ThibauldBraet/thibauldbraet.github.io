@@ -58,4 +58,6 @@ continues until 4 AM on Saturday and Sunday morning, coinciding with when the ni
 
 ### Geographic Data and Maps
 
-<iframe src="../img/crime/crimes_per_hour.png" width="100%" height="400px"></iframe>
+<iframe src="https://thibauldbraet.github.io/maps/crime/pop_map.html" width="100%" height="400px"></iframe>
+<iframe src="https://thibauldbraet.github.io/maps/crime/crime_counts.html" width="100%" height="400px"></iframe>
+<iframe src="https://thibauldbraet.github.io/maps/crime/crime_rates.html" width="100%" height="400px"></iframe>
