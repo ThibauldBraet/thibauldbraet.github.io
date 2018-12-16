@@ -10,19 +10,18 @@ use-site-title: true
 
 New York City is a city of 8.5 million inhabitants, a number which is still growing.
 
-A lot of people are moving to New York to live since it is the epicentre of the world and THE city people imagine when they think about the American dream.
+New York is often considered to be the epicentre of the world and THE city that people imagine when they think about the American dream. As a result many people have moved to New York and continue to do so every year.
 
-Finding a place in New York is however a difficult task. One wants to live in a nice neighbourhood in a comfortable house.
-For families moving to NYC it might also be important to find a place where they could stay there whole life instead of just finding a room to purely sleep.
+Finding a place in New York is, however, a difficult task. Often, one wants to live in a nice neighbourhood in a comfortable house. Furthermore, for families moving to NYC it's also important to find a place where they could live their entire lives and safely raise a family.
 
 To evaluate the living conditions in NYC, we looked at three categories:
-* [Crime rate](pages/Crime): nobody wants to get stabbed on his way to the grocerie store.
-* [Education](/pages/Education) : Families want there kids to have a nice future which all start with a proper educatio
-* [Housing](/pages/Housing): you still should be able to afford to buy a place in NYC and preferable with a good quality price ratio
+* [Crime rate](pages/Crime): Safety is priotiy #1. Nobody wants to get stabbed on his way to the grocerie store.
+* [Education](/pages/Education) : Success is rooted in education. It's important to any family that their children get a good education.
+* [Housing](/pages/Housing): New York ain't cheap. When it comes down to money, you still need to be able to find an affordable place to live.
 
-Besides looking at all these categories seperatly, we will also have a look if these metrics are [correlated](/pages/Overall). Do high crime rates correspond with a lower graduation rate. Are neighbourhoods more prone to crime also cheaper to live in?
+In addition to looking at these metrics independently, we will also examine if and how these metrics are [correlated](/pages/Overall). Do high crime rates correspond with a lower graduation rate? Are neighbourhoods more prone to crime also cheaper to live in?
 
-New York City has been ahead of his time since very long and has collecting data to support all these analysises. When other cities start collecting data in the same way, it might be useful to do scale this project up in other cities.
+Fortunately, NYC has collected massive amounts of usable data on every one of these aspects. As we move further into the information age and more cities begin collecting data in the same way, it would be useful to do scale-up projects like this one and adapt them to other locations.
 
 
 
