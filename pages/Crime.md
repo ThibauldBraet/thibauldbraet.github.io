@@ -4,7 +4,7 @@ title: Crime
 subtitle: Crime in NYC
 ---
 
-New York City is the largest city in the United States by over 4 million people; as such, it is natural that with
+New York City is the largest city in the United States by over 8.5 million people; as such, it is natural that with
 large population comes a large amount of crime. [Detailed crime data](https://data.cityofnewyork.us/Public-Safety/NYPD-Complaint-Data-Historic/qgea-i56i) exists for New York for years from 2006 to now, so we are able to gain some insight into the data.
 
 ### New York City's Crime in Numbers
