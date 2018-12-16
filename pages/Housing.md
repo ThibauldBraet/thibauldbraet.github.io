@@ -18,7 +18,7 @@ In the map below, this metric was evaluated per zip code. We see that it evolves
 <iframe src="https://thibauldbraet.github.io/maps/NYC_PPSQ.html" width="100%" height="400px"></iframe>
 
 ### Price per Unit
-The price per square feet does not say everything about how afforable it is to live somewhere. One can imagine that the bigger the house you buy the more favorable the price/area ratio will be. Maybe you just have a limited total budget. Then you don't care if you have to pay e.g. 400\\$ per square feet if you have to buy a 10 million dollar mansion for that.   
+The price per square feet does not say everything about how afforable it is to live somewhere. One can imagine that the bigger the house you buy the more favorable the price/area ratio will be. Maybe you just have a limited total budget. Then you don't care if you have to pay e.g. 400\$ per square feet if you have to buy a 10 million dollar mansion for that.   
 
 When we look at the distribution of the price per living unit, we do see kind of the same distribution as when looking at the price per area. Only the houses in Manhattan seem to have a very broad distribution with thus some enormously expensive homes, as expected. If you really want to live in Manhattan, you can also find some places as affordable as a place in the Bronx. This will probably be at the expense of a smaller area to live on, we will look into that further on this page.
 {% include graph/housing/distribution_ppu.html %}   
