@@ -28,21 +28,24 @@ Interestingly, there is a definite trend towards improvement in all boroughs.
 Efforts to improve education in NYC have had a serious effect on student
 success. 
 
-Beyond this, it's interesting to note how relative success within boroughs has
-gone almost entirely unchanged over ten years.  
-The Bronx has had a consistently lower graduation rate and a higher dropout
-rate. Meanwhile, Staten Island has consistently performed better than the other
-boroughs. This suggests that, while pushing to improve education has a tangible
-benefit, it doesn't solve the underlying problems that often cause students to
-fail out of schools: poverty and other extenuating circumstances that can shape
-lives.
+Beyond this, it's interesting to note how relative success between boroughs has
+gone almost entirely unchanged over ten years. The Bronx has had a consistently
+lower graduation rate and a higher dropout rate. Meanwhile, Staten Island has
+consistently performed better than the other boroughs. This suggests that, while
+pushing to improve education has a tangible benefit, it doesn't solve the
+underlying problems that often cause students to fail out of schools: poverty
+and other extenuating circumstances that can shape lives.
 
 ### Trends by Postcode
 Next, we'll examine NYC education by postalcode to get a more detailed view of
 how each borough has developed. Below, we mapped the average graduation and 
 dropout rates for each postcode in the year 2013:
 
+Graduation % by Postcode:
+
 <iframe src="https://thibauldbraet.github.io/maps/education/grad_postcodes.html" width="100%" height="400px"></iframe>
+
+Dropout % by Postcode:
 
 <iframe src="https://thibauldbraet.github.io/maps/education/drop_postcodes.html" width="100%" height="400px"></iframe>
 
