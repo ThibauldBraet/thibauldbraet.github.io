@@ -15,4 +15,4 @@ What else do you need?
 
 To be honest, I'm having some trouble remembering right now, so why don't you just watch [my movie](http://en.wikipedia.org/wiki/The_Princess_Bride_%28film%29) and it will answer **all** your questions.
 
-<iframe src="https://thibauldbraet.github.io/interactive/index.html" width="100%" height="400px"></iframe>
+<iframe src="https://thibauldbraet.github.io/maps/interactive/index.html" width="100%" height="400px"></iframe>
