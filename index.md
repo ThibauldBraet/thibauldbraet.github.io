@@ -16,7 +16,7 @@ Finding a place in New York is, however, a difficult task. Often, one wants to l
 
 To evaluate the living conditions in NYC, we looked at three categories:
 * [Crime rate](pages/Crime): Safety is priotiy #1. 
-  * Nobody wants to get stabbed on his way to the grocerie store.
+  * Nobody wants to get stabbed on his way to the grocery store.
 * [Education](/pages/Education) : Success is rooted in education. 
   * It's important to any family that their children get a good education.
 * [Housing](/pages/Housing): New York ain't cheap. 
